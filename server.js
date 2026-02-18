@@ -1,6 +1,9 @@
 let exprss = require('express');
+const cors = require('cors');
 let app = exprss();
 const PORT = 8000;
+
+app.use(cors())
 
 const rappers = {
     '21 savage' :{
